@@ -224,7 +224,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 20.1rem;
+  margin-bottom: 19.1rem;
   background-color: hsl(218, 28%, 13%);
 }
 @media screen and (max-width: 620px) {
