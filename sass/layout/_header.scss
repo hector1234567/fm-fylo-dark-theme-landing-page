@@ -5,13 +5,13 @@
     gap: 3.6rem;
     padding-bottom: 15.8rem;
 
-    background-image: url(/images/bg-curvy-desktop.svg);
+    background-image: url(images/bg-curvy-desktop.svg);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: 100% auto;
 
     @media screen and (max-width: 620px) {
-        background-image: url(/images/bg-curvy-mobile.svg);
+        background-image: url(images/bg-curvy-mobile.svg);
     }
 
     &__illustration img {
