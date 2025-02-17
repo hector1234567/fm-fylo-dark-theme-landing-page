@@ -1,0 +1,43 @@
+.testimony {
+    background-color: $Dark-Blue-testimonials;
+    padding: 4rem 2.47rem 2.6rem 2.6rem;
+    border-radius: .4rem;
+
+    &__text {
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+        letter-spacing: .05rem;
+        margin-bottom: 2.4rem;
+    }
+
+    &__user {
+        display: grid;
+        grid-template-columns: min-content auto;
+        column-gap: 0.8rem;
+      }
+    
+      &__photo {
+        width: 3.2rem;
+        height: 3.2rem;
+        border-radius: 3.2rem;
+        background-image: url(/images/avatar-testimonial.jpg);
+        background-size: cover;
+        background-position: center;
+    
+        grid-row: 1/3;
+      }
+    
+      &__user-name {
+        font-size: 1.1rem;
+        font-family: $Font-Heading;
+        font-weight: $Bold;
+        letter-spacing: 0.055rem;
+        padding-top: 0.4rem;
+      }
+    
+      &__user-data {
+        font-family: $Font-Heading;
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+      }
+}

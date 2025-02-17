@@ -1,0 +1,542 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media screen and (max-width: 988px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-size: 1.4rem;
+  background-color: hsl(217, 28%, 15%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Open Sans";
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(218, 28%, 13%);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7.3rem 8rem 7.5rem 8rem;
+}
+@media screen and (max-width: 620px) {
+  .nav {
+    padding: 24px;
+    padding-bottom: 48px;
+  }
+}
+.nav__logo img {
+  width: 17.6rem;
+}
+@media screen and (max-width: 620px) {
+  .nav__logo img {
+    width: 80px;
+  }
+}
+.nav__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 5.7rem;
+}
+.nav__link {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: inherit;
+  text-decoration: none;
+}
+.nav__link:hover {
+  font-weight: 700;
+  text-decoration: underline;
+  letter-spacing: -0.055rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.6rem;
+  padding-bottom: 15.8rem;
+  background-image: url(/images/bg-curvy-desktop.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+@media screen and (max-width: 620px) {
+  .header {
+    background-image: url(/images/bg-curvy-mobile.svg);
+  }
+}
+.header__illustration img {
+  width: 72rem;
+}
+@media screen and (max-width: 620px) {
+  .header__illustration img {
+    width: 304px;
+  }
+}
+.header__content {
+  width: 100%;
+  max-width: 73.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 3.2rem;
+}
+.header__heading {
+  font-family: "Raleway";
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 6rem;
+}
+@media screen and (max-width: 620px) {
+  .header__heading {
+    font-size: 24px;
+    line-height: 36px;
+    padding: 0 28px;
+  }
+}
+.header__text {
+  max-width: 58.9rem;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+@media screen and (max-width: 620px) {
+  .header__text {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 0 28px;
+  }
+}
+
+.features {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 13.737rem;
+  background-color: hsl(218, 28%, 13%);
+}
+.features__cards {
+  width: 100%;
+  max-width: 88rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 13.3rem;
+  row-gap: 7.9rem;
+}
+@media screen and (max-width: 620px) {
+  .features__cards {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+    row-gap: 80px;
+  }
+}
+
+.productivity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5.724rem;
+  padding-bottom: 12rem;
+  background-color: hsl(218, 28%, 13%);
+  width: 100%;
+}
+@media screen and (max-width: 620px) {
+  .productivity {
+    flex-direction: column;
+    padding: 0 28px;
+    padding-bottom: 160px;
+  }
+}
+.productivity__illustration img {
+  width: 100%;
+  max-width: 61.476rem;
+}
+@media screen and (max-width: 620px) {
+  .productivity__illustration img {
+    max-width: 304px;
+  }
+}
+.productivity__content {
+  max-width: 56.3rem;
+}
+.productivity__heading {
+  font-family: "Raleway";
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 5rem;
+  margin-bottom: 1.9rem;
+  max-width: 49rem;
+}
+@media screen and (max-width: 620px) {
+  .productivity__heading {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+.productivity__text {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+@media screen and (max-width: 620px) {
+  .productivity__text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+.productivity__link, .productivity__link:link, .productivity__link:visited {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  width: auto;
+  height: 2.7rem;
+  border-bottom: 0.1rem solid hsl(176, 68%, 64%);
+  color: hsl(176, 68%, 64%);
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+.productivity__link:hover, .productivity__link:link:hover, .productivity__link:visited:hover {
+  border-bottom: 0.1rem solid hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
+}
+
+.testimonies {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20.1rem;
+  background-color: hsl(218, 28%, 13%);
+}
+@media screen and (max-width: 620px) {
+  .testimonies {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+.testimonies__list {
+  list-style: none;
+  padding-top: 5.9rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 4rem;
+  width: 100%;
+  max-width: 120rem;
+  background-image: url(/images/bg-quotes.png);
+  background-size: 7rem auto;
+  background-position: 1rem 1rem;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 620px) {
+  .testimonies__list {
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+  }
+}
+
+.access {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -11.6rem;
+  width: 100%;
+}
+.access__content {
+  background-color: hsl(219, 30%, 18%);
+  width: 100%;
+  max-width: 86.3rem;
+  padding: 4.2rem 7.7rem;
+  text-align: center;
+  border-radius: 0.9rem;
+}
+.access__heading {
+  font-size: 3.2rem;
+  line-height: 4.8rem;
+  font-weight: 700;
+  font-family: "Raleway";
+  margin-bottom: 1.6rem;
+}
+@media screen and (max-width: 620px) {
+  .access__heading {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+.access__text {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  margin-bottom: 3.8rem;
+  max-width: 67.3rem;
+}
+@media screen and (max-width: 620px) {
+  .access__text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+.access__form {
+  width: 100%;
+}
+.access__form button {
+  text-wrap: nowrap;
+}
+@media screen and (max-width: 620px) {
+  .access__form button {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 620px) {
+  .access__form {
+    flex-direction: column;
+  }
+}
+
+.footer {
+  background-color: hsl(216, 53%, 9%);
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+  padding-top: 16.9rem;
+  display: flex;
+  justify-content: center;
+}
+.footer__container {
+  width: 100%;
+  max-width: 124rem;
+  margin: 0 2rem 8.6rem 2rem;
+}
+@media screen and (max-width: 854px) {
+  .footer__container {
+    margin: 65px 39px;
+  }
+}
+.footer__logo img {
+  width: 13.5rem;
+  margin-bottom: 3.6rem;
+}
+.footer__location {
+  display: flex;
+  align-items: flex-start;
+}
+.footer__location span {
+  width: 33.9rem;
+  line-height: 2.4rem;
+}
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+@media screen and (max-width: 854px) {
+  .footer__links {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+.footer__links ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.footer__links li {
+  display: flex;
+  align-items: center;
+}
+.footer__links a,
+.footer__links a:link,
+.footer__links a:visited {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.footer__links a:hover {
+  color: hsl(198, 60%, 50%);
+}
+.footer__icon {
+  width: 2rem;
+  margin-right: 1.6rem;
+}
+.footer__social {
+  flex-direction: row !important;
+}
+@media screen and (max-width: 854px) {
+  .footer__social {
+    align-self: center;
+  }
+}
+.footer__social li {
+  width: 3.3rem;
+  height: 3.3rem;
+  border-radius: 3.2rem;
+  border: 0.15rem solid hsl(0, 0%, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.footer__social li svg {
+  width: 1.4rem;
+  fill: hsl(0, 0%, 100%);
+  transition: all 0.3s ease;
+}
+.footer__social li:hover {
+  border: 0.15rem solid hsl(198, 60%, 50%);
+}
+.footer__social li:hover svg {
+  fill: hsl(198, 60%, 50%) !important;
+}
+
+.button,
+.button:link,
+.button:visited {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 9.6rem;
+  height: 5.6rem;
+  border-radius: 5.6rem;
+  background-image: linear-gradient(130deg, hsl(176, 68%, 64%) 0%, hsl(198, 60%, 50%) 100%);
+  font-family: "Raleway";
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+.button:hover,
+.button:link:hover,
+.button:visited:hover {
+  background-image: linear-gradient(130deg, hsl(176, 68%, 64%) 0%, hsl(176, 68%, 64%) 100%);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.card__icon {
+  height: 10.4rem;
+  width: 10.4rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 1.6rem;
+}
+.card__heading {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Raleway";
+  margin-bottom: 0.9rem;
+}
+.card__text {
+  font-size: 1.4rem;
+}
+
+.testimony {
+  background-color: hsl(219, 30%, 18%);
+  padding: 4rem 2.47rem 2.6rem 2.6rem;
+  border-radius: 0.4rem;
+}
+.testimony__text {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  letter-spacing: 0.05rem;
+  margin-bottom: 2.4rem;
+}
+.testimony__user {
+  display: grid;
+  grid-template-columns: min-content auto;
+  column-gap: 0.8rem;
+}
+.testimony__photo {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 3.2rem;
+  background-image: url(/images/avatar-testimonial.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-row: 1/3;
+}
+.testimony__user-name {
+  font-size: 1.1rem;
+  font-family: "Raleway";
+  font-weight: 700;
+  letter-spacing: 0.055rem;
+  padding-top: 0.4rem;
+}
+.testimony__user-data {
+  font-family: "Raleway";
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 2.9rem;
+}
+.form__group {
+  width: 100%;
+}
+.form__input {
+  width: 100%;
+  padding-left: 3.8rem;
+  height: 4.8rem;
+  border-radius: 8.8rem;
+  border: none;
+  font-family: inherit;
+  font-size: 1.2rem;
+  color: hsl(217, 28%, 15%);
+}
+.form__input::placeholder {
+  font-family: inherit;
+  font-size: 1.2rem;
+  color: #c0c0c0;
+}
+.form__input:focus {
+  outline: none;
+}
+.form__input:focus:invalid ~ .form__error {
+  display: inline-block !important;
+}
+.form__submit {
+  padding: 0 2.7rem;
+  border: none;
+  height: 4.8rem;
+  cursor: pointer;
+}
+.form__error {
+  position: absolute;
+  left: 3.8rem;
+  bottom: -2rem;
+  color: hsl(0, 100%, 63%);
+  font-size: 1rem;
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

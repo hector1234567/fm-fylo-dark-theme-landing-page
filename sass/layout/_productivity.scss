@@ -1,0 +1,72 @@
+.productivity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5.724rem;
+    padding-bottom: 12rem;
+    background-color: $Dark-Blue-main;
+    width: 100%;
+
+    @media screen and (max-width: 620px) {
+        flex-direction: column;
+        padding: 0 28px;
+        padding-bottom: 160px;
+    }
+
+    &__illustration img {
+        width: 100%;
+        max-width: 61.476rem;
+
+        @media screen and (max-width: 620px) {
+            max-width:304px;
+        }
+    }
+
+    &__content {
+        max-width: 56.3rem;
+    }
+
+    &__heading {
+        font-family: $Font-Heading;
+        font-size: 4rem;
+        font-weight: $Bold;
+        line-height: 5rem;
+        margin-bottom: 1.9rem;
+        max-width: 49rem;
+
+        @media screen and (max-width: 620px) {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        margin-bottom: 1.6rem;
+
+        @media screen and (max-width: 620px) {
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+
+    &__link,
+    &__link:link,
+    &__link:visited {
+        display: inline-flex;
+        align-items: center;
+        gap: .8rem;
+        width: auto;
+        height: 2.7rem;
+        border-bottom: .1rem solid $Cyan;
+        color: $Cyan;
+        font-size: 1.6rem;
+        text-decoration: none;
+
+        &:hover {
+            border-bottom: .1rem solid $White;
+            color: $White;
+        }
+    }
+}

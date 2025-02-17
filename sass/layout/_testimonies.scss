@@ -1,0 +1,33 @@
+.testimonies {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20.1rem;
+    background-color: $Dark-Blue-main;
+
+    @media screen and (max-width: 620px) {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    &__list {
+        list-style: none;
+        padding-top: 5.9rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 4rem;
+        width: 100%;
+        max-width: 120rem;
+        background-image: url(/images/bg-quotes.png);
+        background-size: 7rem auto;
+        background-position: 1rem 1rem;
+        background-repeat: no-repeat;
+
+        @media screen and (max-width: 620px) {
+            grid-template-columns: 1fr;
+            row-gap: 24px;
+        }
+    }
+}

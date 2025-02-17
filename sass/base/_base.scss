@@ -1,0 +1,53 @@
+// Primary
+
+$Dark-Blue-intro: hsl(217, 28%, 15%);
+$Dark-Blue-main: hsl(218, 28%, 13%);
+$Dark-Blue-footer: hsl(216, 53%, 9%);
+$Dark-Blue-testimonials: hsl(219, 30%, 18%);
+
+// Accent
+
+$Cyan: hsl(176, 68%, 64%);
+$Blue: hsl(198, 60%, 50%);
+$Light-Red: hsl(0, 100%, 63%);
+
+// Neutral
+
+$White: hsl(0, 0%, 100%);
+$Grey: #c0c0c0;
+
+$Regular: 400;
+$Bold: 700;
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+
+    @media screen and (max-width: 988px) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-size: 1.4rem;
+    background-color: $Dark-Blue-intro;
+    color: $White;
+    font-family: $Font-Body;
+
+    // padding: 7.3rem 8rem 5.3rem 8rem;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $Dark-Blue-main;
+}

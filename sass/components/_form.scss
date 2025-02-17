@@ -1,0 +1,52 @@
+.form {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 2.9rem;
+
+    &__group {
+        width: 100%;
+    }
+
+    &__input {
+        width: 100%;
+        padding-left: 3.8rem;
+        height: 4.8rem;
+        border-radius: 8.8rem;
+        border: none;
+        font-family: inherit;
+        font-size: 1.2rem;
+        color: $Dark-Blue-intro;
+
+
+        &::placeholder {
+            font-family: inherit;
+            font-size: 1.2rem;
+            color: $Grey;
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        &:focus:invalid ~ .form__error {
+            display: inline-block !important;
+        }
+    }
+
+    &__submit {
+        padding: 0 2.7rem;
+        border: none;
+        height: 4.8rem;
+        cursor: pointer;
+    }
+
+    &__error {
+        position: absolute;
+        left: 3.8rem;
+        bottom: -2rem;
+        color: $Light-Red;
+        font-size: 1rem;
+        display: none;
+    }
+}

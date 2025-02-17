@@ -1,0 +1,21 @@
+.button,
+.button:link,
+.button:visited {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 9.6rem;
+    height: 5.6rem;
+    border-radius: 5.6rem;
+    background-image: linear-gradient(130deg, $Cyan 0%, $Blue 100%);
+    font-family: $Font-Heading;
+    font-size: 1.6rem;
+    font-weight: $Bold;
+    text-decoration: none;
+    color: $White;
+
+    &:hover {
+        background-image: linear-gradient(130deg, $Cyan 0%, $Cyan 100%);;
+    }
+}
+

@@ -1,0 +1,111 @@
+.footer {
+    background-color: $Dark-Blue-footer;
+    color: $White;
+    width: 100%;
+    padding-top: 16.9rem;
+  
+    display: flex;
+    justify-content: center;
+  
+    &__container {
+      width: 100%;
+      max-width: 124rem;
+      margin: 0 2rem 8.6rem 2rem;
+  
+      @media screen and (max-width: 854px) {
+        margin: 65px 39px;
+      }
+    }
+  
+    &__logo img {
+      width: 13.5rem;
+      margin-bottom: 3.6rem;
+    }
+
+    &__location {
+      display: flex;
+      align-items: flex-start;
+
+      span {
+        width: 33.9rem;
+        line-height: 2.4rem;
+      }
+    }
+  
+    &__links {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.6rem;
+      font-weight: $Regular;
+  
+      @media screen and (max-width: 854px) {
+        flex-direction: column;
+        gap: 32px;
+      }
+  
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+      }
+  
+      li {
+        display: flex;
+        align-items: center;
+      }
+  
+      a,
+      a:link,
+      a:visited {
+        text-decoration: none;
+        color: $White;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+  
+      a:hover {
+        color: $Blue;
+      }
+    }
+  
+    &__icon {
+      width: 2rem;
+      margin-right: 1.6rem;
+    }
+  
+    &__social {
+      flex-direction: row !important;
+  
+      @media screen and (max-width: 854px) {
+        align-self: center;
+      }
+  
+      li {
+        width: 3.3rem;
+        height: 3.3rem;
+        border-radius: 3.2rem;
+        border: 0.15rem solid $White;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+  
+        svg {
+          width: 1.4rem;
+          fill: $White;
+          transition: all 0.3s ease;
+        }
+  
+        &:hover {
+          border: 0.15rem solid $Blue;
+  
+          svg {
+            fill: $Blue !important;
+          }
+        }
+      }
+    }
+  }
+  
